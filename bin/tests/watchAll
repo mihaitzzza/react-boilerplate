@@ -1,0 +1,2 @@
+#!/bin/bash
+docker-compose run --rm react-boilerplate_ui npm run test:watchAll
