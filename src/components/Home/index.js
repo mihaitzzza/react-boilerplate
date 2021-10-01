@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
 import Menu from '../Menu';
-import { LOGO_IMAGE } from '../../utility/utils/images';
 
 const Home = () => {
   useEffect(() => {
     document.title = 'Homepage | DCT';
   }, []);
-
-  console.log('LOGO_IMAGE', LOGO_IMAGE);
 
   return (
     <>
