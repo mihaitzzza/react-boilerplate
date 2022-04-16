@@ -7,7 +7,7 @@ import { LOGO_IMAGE } from '../utils/images';
 
 import '../style/app.scss';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -20,6 +20,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
