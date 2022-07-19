@@ -1,87 +1,92 @@
 {
-  env: {
-    es6: true,
-    browser: true,
-    node: true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
   },
-  extends: [
-    'airbnb',
-    'plugin:jest/recommended',
-    'jest-enzyme'
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended",
+    "jest-enzyme"
   ],
-  plugins: [
-    'babel',
-    'import',
-    'jsx-a11y',
-    'react',
-    'prettier',
+  "plugins": [
+    "babel",
+    "import",
+    "jsx-a11y",
+    "react",
+    "prettier"
   ],
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
   },
-  rules: {
-    'linebreak-style': 'off',
+  "rules": {
+    "prefer-destructuring": "error",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
     // Don't play nicely with Windows.
 
-    'arrow-parens': 'off',
+    "arrow-parens": "off",
     // Incompatible with prettier
-    'object-curly-newline': 'off',
+    "object-curly-newline": "off",
     // Incompatible with prettier
-    'no-mixed-operators': 'off',
+    "no-mixed-operators": "off",
     // Incompatible with prettier
-    'arrow-body-style': 'off',
+    "arrow-body-style": "off",
     // Not our taste?
-    'function-paren-newline': 'off',
+    "function-paren-newline": "off",
     // Incompatible with prettier
-    'no-plusplus': 'off',
-    'space-before-function-paren': 0,
+    "no-plusplus": "off",
+    "space-before-function-paren": 0,
     // Incompatible with prettier
 
-    'max-len': [
-      'error',
+    "max-len": [
+      "error",
       100,
       2,
       {
-        ignoreUrls: true,
+        "ignoreUrls": true
       }
     ],
     // airbnb is allowing some edge cases
-    'no-console': 'error',
+    "no-console": "error",
     // airbnb is using warn
-    'no-alert': 'error',
+    "no-alert": "error",
     // airbnb is using warn
 
-    'no-param-reassign': 'off',
+    "no-param-reassign": "off",
     // Not our taste?
     "radix": "off",
     // parseInt, parseFloat radix turned off. Not my taste.
 
-    'react/require-default-props': 'off',
+    "react/jsx-curly-newline": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "error",
+    "react/jsx-wrap-multilines": "off",
     // airbnb use error
-    'react/forbid-prop-types': 'off',
+    "react/forbid-prop-types": "off",
     // airbnb use error
-    'react/jsx-filename-extension': [
-      'error',
+    "react/jsx-filename-extension": [
+      "error",
       {
-        extensions: [
-          '.js'
+        "extensions": [
+          ".js"
         ]
       }
     ],
     // airbnb is using .jsx
 
-    'prefer-destructuring': 'off',
-    'react/no-find-dom-node': 'off',
+    "react/no-find-dom-node": "off",
     // I don't know
-    'react/no-did-mount-set-state': 'off',
-    'react/no-unused-prop-types': 'off',
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off",
     // Is still buggy
-    'react/jsx-one-expression-per-line': 'off',
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-array-index-key": "warn",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -93,6 +98,7 @@
         ]
       }
     ],
+    "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/label-has-for": [
       2,
       {
@@ -105,9 +111,13 @@
     ],
     // for nested label htmlFor error
     "implicit-arrow-linebreak": "off",
-
-    'prettier/prettier': [
-      'error'
+    "prettier/prettier": [
+      "error"
     ],
-  },
+    "import/no-unresolved": "off",
+    "indent": "off",
+    "no-confusing-arrow": "off",
+    "operator-linebreak": "off",
+    "no-shadow": "warn",
+  }
 }

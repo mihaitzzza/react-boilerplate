@@ -1,15 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Menu from '../Menu';
 
 const Home = () => {
-  useEffect(() => {
-    document.title = 'Homepage | DCT';
-  }, []);
-
   return (
     <>
       <Menu />
-      <div>Home component</div>
+      <div className="text-3xl font-bold underline">Home component</div>
       <div>
         <img src="images/deliveryLogo.png" width={50} alt="Logo" />
       </div>

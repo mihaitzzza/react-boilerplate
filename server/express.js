@@ -51,8 +51,6 @@ app.use('*', async (req, res) => {
   // populate `#app` element with `appHTML`
   indexHTML = indexHTML.replace('<div id="app"></div>', appHTML);
 
-  console.log('req.originalUrl', req.originalUrl);
-
   if (req.originalUrl === '/') {
     indexHTML = indexHTML.replace('<title></title>', '<title>Homepage | DCT</title>');
   } else if (req.originalUrl === '/about-us') {
