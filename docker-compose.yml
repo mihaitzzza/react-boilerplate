@@ -1,14 +1,14 @@
 version: '3.7'
 
 services:
-  react-boilerplate_ui:
-    container_name: react-boilerplate-ui
+  ssr-react-boilerplate:
+    container_name: ssr-react-boilerplate
     tty: true
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
-      - '.:/app'
+      - './app:/app'
       - '/app/node_modules'
     ports:
       - 8080:8080
